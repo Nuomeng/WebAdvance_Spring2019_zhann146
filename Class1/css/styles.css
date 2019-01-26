@@ -1,0 +1,33 @@
+body{
+  /* background-color: black; */
+}
+
+.container{
+
+width:70%; /* related to the browser it self */
+height: 70vw;/*vw: viewwidth = 70% square*/
+margin-left: 10%;
+background-color: blue;
+}
+.msg{
+  color: black;
+  font-size:14px;
+}
+.boxes{
+  width: calc(90% / 3); /* calc() 用于计算*/
+  height: 600px;
+  margin: 10px;
+  float:left; /*float 排列在一行*/
+}
+#box1{
+  background-color: green;
+
+}
+#box2{
+  background-color: gold;
+
+}
+#box3{
+  background-color: red;
+
+}
