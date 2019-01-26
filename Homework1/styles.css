@@ -3,7 +3,7 @@ body {
   background-color: #4A4A4A;
 }
 
-#labelTitle{
+#labelTitle {
   color: white;
   font-size: 3em;
   display: block;
@@ -12,7 +12,7 @@ body {
   margin-bottom: 40px;
 }
 
-#labelSubTitle{
+#labelSubTitle {
   color: white;
   font-size: 1.6em;
   display: block;
@@ -25,7 +25,6 @@ body {
   color: white;
   display: block;
   text-align: center;
-  /* margin-top: 20px; */
 }
 
 .choice {
@@ -45,6 +44,6 @@ body {
   margin-bottom: 40px;
 }
 
-#button3{
+#button3 {
   font-family: monospace;
 }

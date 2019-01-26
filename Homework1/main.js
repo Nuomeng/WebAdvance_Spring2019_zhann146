@@ -14,9 +14,6 @@ labelSubTitle.innerHTML = "Text Adventure";
 button1.textContent = "Yes";
 button2.textContent = "No";
 
-
-// button2.style.visibility = "visible";
-
 button1.onclick = function() {
   actionYesHungry()
 };
