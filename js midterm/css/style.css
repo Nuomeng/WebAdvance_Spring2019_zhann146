@@ -1,0 +1,142 @@
+.work {
+  padding-bottom: 40px;
+  margin-top: 60px;
+}
+.work * {
+  box-sizing: border-box;
+}
+
+.ideogram p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 6px;
+  display: inline-block;
+  font-size: 24px;
+  padding-top: 80px;
+  margin-left: 12%;
+  color: #000;
+  font-weight: bolder;
+
+}
+
+.category-buttons {
+  text-align: center;
+}
+
+
+.category-buttons a {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size: 0.9em;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  margin-left: 22px;
+  margin-right: 22px;
+  margin-bottom: 64px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom:14px;
+  padding-top:2px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+
+}
+
+
+.category-buttons a.active {
+
+  background-color: #000;
+  color:#fff;
+  border-radius: 1px;
+  height: 24px;
+  z-index: -1;
+  -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+
+}
+
+
+/*END STYLING*/
+.category-buttons a {
+display: inline-block;
+height: 0px;
+}
+.category-buttons a:after {
+color: #fff;
+background: #000;
+width: 0px;
+height: 2px;
+
+content:"";
+display: block;
+transition: all 200ms ease-in-out;
+top: -10px;
+z-index: -1;
+}
+.category-buttons a:hover:after {
+width: 100%;
+}
+
+
+.grid {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 0.75s cubic-bezier(1, 0, 0, 1);
+  transition: all 0.75s cubic-bezier(1, 0, 0, 1);
+}
+
+
+.grid .animating {
+  -webkit-transition: all 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  transition: all 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+.grid .setScale {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.grid .show {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.card {
+  /* background: #fff; */
+  display: block;
+  text-decoration: none;
+  color: #2b2b2b;
+  width: 32%;
+
+  transform-origin: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+}
+.work .card img{
+
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.work .card img {
+  display: block;
+  width: 100%;
+}
+.work .card .title {
+  text-align: center;
+  padding: 10px;
+  color: #2b2b2b;
+}
+.work .guide {
+  width: 32%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1000;
+}

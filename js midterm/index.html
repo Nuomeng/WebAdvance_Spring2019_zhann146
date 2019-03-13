@@ -1,0 +1,58 @@
+<!--*****************************************Icon made by Ting-An Ho from https://motiontypeproject.com/ ********************************************-->
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS Midterm</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--****************************************** - header - *********************************************-->
+<div class="header">
+  <div class="ideogram">
+  <p> IDEOGRAM <p>
+  </div>
+</div>
+
+<!--****************************************** - gallery- *********************************************-->
+  <div class="work">
+  <div class="category-buttons">
+    <a href="#" class="active all" data-group="all">All 全部</a>
+    <a href="#" data-group="song">SONG 宋</a>
+    <a href="#" data-group="hei">HEI 黑</a>
+    <a href="#" data-group="yuan">YUAN 圆</a>
+    <a href="#" data-group="handwritten">HAND WRITTEN  书法</a>
+    <a href="#" data-group="graphic">GRAPGIC 艺术字</a>
+  </div>
+
+    <div id="grid" class="grid">
+      <script id = "students-template" type="x-handlebars-template">
+					{{#each this}}
+						<ul data-index="{{id}}">
+
+							<a  class="card" data-groups="{{group}}" href="{{pic-url}}" >
+							<img src="{{profile-pic}}"  alt="{{name}}">
+
+							<div class="title"> {{name}} </div>
+              <div class="title"> {{name-en}}</div>
+              </a>
+
+						</ul>
+					{{/each}}
+
+				</script>
+
+<div class="guide"></div>
+
+  </div>
+
+</div>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+    <script  src="js/index.js"></script>
+</body>
+
+</html>

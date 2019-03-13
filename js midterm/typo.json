@@ -1,0 +1,103 @@
+[
+  {
+  "id": 1,
+  "name": "「水」",
+  "name-en": "WATER",
+  "profile-pic": "https://freight.cargocollective.com/w/600/q/94/i/f688bcb92e119c6e30ffe6754723c889d02d5bbcbe6507ce88134753081bdb85/waterdrop_water.gif",
+  "group":"song,",
+  "pic-url":"ideogram/ideogram.html"
+},
+{
+"id": 2,
+"name": "「不」",
+"name-en": "NO",
+"profile-pic": "https://freight.cargocollective.com/w/600/q/94/i/b270d9264b7ef7cc9636624396930102bb60aec96e11b6d5a7a19ee1ab386677/kozuka.gif",
+"group":"song,"
+},
+{
+"id": 3,
+"name": "「光」",
+"name-en": "LIGHT",
+"profile-pic": "https://freight.cargocollective.com/w/600/q/94/i/0cb3bec19b919596d74ea3b35dd73062e6d6dc8a4c41ffaf2703f6436b5a6888/light_light.gif",
+"group":"hei,"
+},
+{
+"id": 4,
+"name": "「链」",
+"name-en": "CHAIN",
+"profile-pic": "https://freight.cargocollective.com/w/600/q/94/i/454ad1aa93e634adbc3bfb7cf40ab1965d92a5458da5006e42a6bd2e0e78982a/chain_lien.gif",
+"group":"yuan,"
+},
+{
+"id": 5,
+"name": "「金」",
+"name-en": "GOLD",
+"profile-pic": "https://freight.cargocollective.com/w/600/q/94/i/d84c6be4f574009d6a3388f3ad58f59c7b50db8b2e8ca15899237e7aa4422236/gold_gold.gif",
+"group":"graphic,song,"
+},
+{
+"id": 6,
+"name": "「弹」",
+"name-en": "BOUNCE",
+"profile-pic": "https://freight.cargocollective.com/w/600/q/94/i/f39a27ca9befd57bd648f6c47768b89502ff8894f5aa99bab0569cfeae0ac341/bounce_bounce.gif",
+"group":"yuan,"
+},
+{
+"id": 7,
+"name": "「伞」",
+"name-en": "UMBRELLA",
+"profile-pic": "https://freight.cargocollective.com/w/600/q/94/i/8d1a62e5cfb736954d4f1b73231ced48305c523d6bd047b8f468ba532bebaecf/san_ming_medium.gif",
+"group":"song,"
+},
+{
+"id": 8,
+"name": "「截」",
+"name-en": "CUT",
+"profile-pic": "https://freight.cargocollective.com/w/600/q/94/i/44bd58cfedb2f4d46fdc135001713d47a2297840f15eb868e7ed75346f3a32b2/cut_inception.gif",
+"group":"hei,"
+},
+{
+"id": 9,
+"name": "「川」",
+"name-en": "PLAIN",
+"profile-pic": "https://freight.cargocollective.com/w/600/q/94/i/98bb62c22c8e536c8ec7a9117a14a275cd8a32ff14ea97208b58966663374aac/plain_semibold_comp_fin.gif",
+"group":"yuan,"
+},
+{
+"id": 10,
+"name": "「焱」",
+"name-en": "LIQUID FLAME",
+"profile-pic": "https://freight.cargocollective.com/w/600/q/94/i/cc7ff7447aa2aff26c79d121780bb9e51279431d64d2114cd70d38f41a1e0ae4/liquid_flame.gif",
+"group":"handwritten,"
+},
+{
+"id": 11,
+"name": "「宵」",
+"name-en": "NIGHT",
+"profile-pic": "https://freight.cargocollective.com/w/600/q/94/i/93f613d02049962483a8a2c4e0d5c8c6b9bdb6a4f6c59939089d731eb6bbe416/light_night.gif",
+"group":"handwritten,"
+},
+{
+"id": 12,
+"name": "「风」",
+"name-en": "WIND",
+"profile-pic": "https://freight.cargocollective.com/w/600/q/94/i/ccbb164c8072e0ab6c58a6eeca55a7740a9e5ff63dc2613ad77830b2ecbeb0b2/kyokasho_wind.gif",
+"group":"handwritten,song,"
+},
+{
+"id": 13,
+"name": "「生」",
+"name-en": "GROW",
+"profile-pic": "https://freight.cargocollective.com/w/600/q/94/i/ef2cbd1ae4b72876749f2caeafce31d07484e0694782afd229bc777325de433d/ramp_02.gif",
+"group":"graphic,"
+},
+{
+"id": 14,
+"name": "「碎」",
+"name-en": "BROKE",
+"profile-pic": "https://freight.cargocollective.com/w/600/q/94/i/993837f4083bfde0a663457509d19f8e97dc2c0c67956652f25c1cb2ac209ec1/broke_broke.gif",
+"group":"graphic,"
+}
+
+
+]

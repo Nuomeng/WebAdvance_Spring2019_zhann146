@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  font-family: Avenir;
+  font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+/* //////////////////////////////////// - header - /////////////////////////////////////// */
+
+.header {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  z-index: 9999;
+  top: 0;
+}
+
+.ideogram p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 6px;
+  display: inline-block;
+  font-size: 24px;
+  padding-top: 80px;
+  padding-left: 240px;
+  color: #000;
+  font-weight: bolder;
+
+}
+
+.logo {
+  position: fixed;
+  display: block;
+  top: 64px;
+  right: 180px;
+}
+
+.logo img {
+  width: 24px;
+}
+
+/* /////////////////// - navigation - ///////////////////////// */
+
+.nav {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  margin-top: 40px;
+  padding-top: 140px;
+  padding-bottom: 20px;
+  z-index: 999;
+  background-color: #fff;
+  top: 0;
+}
+
+.nav ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 210px;
+}
+
+.nav li {
+  width: auto;
+  height: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.nav li a {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight:normal;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2em;
+  letter-spacing: 4px;
+  font-weight: bold;
+  color: #8a8a8a;
+  transition: .5s ease-in-out;
+}
+
+.nav li a:hover {
+  color: #CF2727;
+}
+
+#history {
+  color: #5E8661;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* //////////////////////////////////// - sections - /////////////////////////////////////// */
+
+.section {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	height: auto;
+
+}
+#Oracle-Bone-Script {
+
+  margin-top: 200px;
+}
+
+
+.history {
+  display: inline-block;
+  position: absolute;
+  left: 240px;
+  top: 240px;
+  width: 60%;
+}
+
+.char img {
+  display: inline-block;
+  padding-left: 40px;
+	padding-top:100px;
+  width: 25%;
+  transition: all .5s cubic-bezier(.455,.03,.515,.955);
+}
+
+.char img:hover {
+
+}
+.char h1,h2{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+}
+.char p {
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  line-height: 24px;
+
+}
+
+.char_info {
+  display: inline-block;
+	padding-top:100px;
+  width: 40%;
+	margin-left: 14%;
+}
+
+
+/* //////////////////////////////////// - sections navigation - /////////////////////////////////////// */
+
+#timeline {
+	position: fixed;
+	top: 60%;
+	right: 0;
+	z-index: 99999;
+	text-transform: uppercase;
+
+	-webkit-transition: all ease 0.25s;
+	transition: all ease 0.25s;
+}
+#timeline.freeze {
+	right: -112px;
+}
+
+#timeline ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#timeline li {}
+#timeline a {
+	float: right;
+	clear: both;
+
+	display: block;
+	height: 3em;
+	line-height: 2em;
+	text-decoration: none;
+	padding: 0 30px;
+	color: #000;
+	white-space: nowrap;
+	font-weight: 600;
+
+	-webkit-transition: all ease 0.25s;
+	transition: all ease 0.25s;
+}
+#timeline.freeze a {
+	float: none;
+	width: 128px;
+	background: rgb(94,134,97,0.5);
+}
+
+#timeline a span {
+	padding-top: 8px;
+	display: none;
+	position: relative;
+	width: 48px;
+	left: -16px;
+	text-align: center;
+
+
+}
+#timeline a.active {
+	background:  #5E8661;
+	font-size: 1.4em;
+}
+#timeline.freeze a span {
+	display: inline-block;
+}
+#timeline a.active span {
+	display: inline-block;
+	background: #5E8661;
+}
+#timeline a.active span:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+
+}
+
+/* //////////////////////////////////// - footer - /////////////////////////////////////// */
+.footer{
+  height: 120px;
+  width: 100%;
+  bottom: 0px;
+  position: fixed;
+  z-index: 9999999;
+  background-color: #fff;
+}
+@media screen and (max-width: 1500px) {
+  .ideogram p {
+    padding-left: 180px;
+  }
+
+  .nav ul {
+    left: 150px;
+  }
+}
