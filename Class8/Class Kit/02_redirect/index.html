@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive Web Design - 2 redirect</title>
+</head>
+<body>
+	<h1 id="device">a</h1>
+
+	<script>
+	var ua = window.navigator.userAgent;
+	document.getElementById("device").innerHTML = ua;
+	//Mobile
+	if(ua.indexOf('Mobile')!== -1){
+		window.location.replace('mobile.html');
+	};
+
+	//Desktop
+	if(ua.indexOf('Machintosh')!== -1){
+		window.location.replace('desktop.html');
+	};
+	</script>
+</body>
+</html>

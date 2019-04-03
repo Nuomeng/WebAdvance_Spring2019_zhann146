@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width,initial-scale=1">
+    <title></title>
+
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      var burger = $('.btn');
+      var menu = $('.full-menu');
+      var navItems =$('.nav__item');
+
+      burger.click(function(){
+        burger.toggleClass('btn--open');
+        menu.toggleClass('menu--open');
+      });
+
+      navItems.hover(function(){
+        navItems.not($(this)).toggleClass('nav__item--hover');
+      });
+    });
+    </script>
+</head>
+<body>
+
+      <button class="btn">
+        <span class="btn__line"></span>
+        <span class="btn__line"></span>
+        <span class="btn__line"></span>
+      </button>
+      <div class="full-menu">
+        <div class="layer"></div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Portfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+
+    <div class="container">
+        <div class="left"></div>
+        <div class="main"></div>
+        <div class="right"></div>
+    </div>
+
+
+</body>
+</html>

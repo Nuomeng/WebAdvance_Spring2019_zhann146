@@ -1,0 +1,299 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+
+}
+html{
+  margin:0px;
+  padding:0px;
+  height:100%;
+  width:100%;
+}
+
+body{
+  position:relative;
+  height:100%;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*****************************************-nav-***************************************************/
+
+
+
+.btn{
+  position:absolute;
+  top:40px;
+  left:40px;
+  background-color:transparent;
+
+  padding:0px;
+  z-index:1;
+  cursor:pointer;
+  border-style: none;
+  outline:none;
+}
+
+.btn__line{
+  height:2px;
+  width:32px;
+  display:block;
+  background-color:#292929;
+  transition: all 0.5s;
+  position: relative;
+
+}
+
+
+
+
+.btn__line + .btn__line{
+  margin-top:6px;
+}
+
+.btn:hover .btn__line, .btn--open .btn__line{
+  left:0px;
+}
+
+.btn--open .btn__line{
+  background-color:#fff;
+}
+
+.nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    visibilty: hidden;
+    transition: all 0.9s cubic-bezier(0.77, 0, 0.175, 1) 0.3s;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nav__item--hover{
+  opacity: 0.25;
+}
+
+.full-menu {
+  position: fixed;
+  top:0;
+    width: 100%;
+  height:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   transition: height 0.9s cubic-bezier(0.77, 0, 0.175, 1) ;
+}
+
+.full-menu:before, .full-menu:after{
+  content: '';
+  height: 0;
+   position: fixed;
+  top:0;
+    width: 100%;
+    height: 0;
+}
+
+.full-menu:before{
+  z-index: -2;
+  background-color:#3b3b3b;
+    transition: height 0.9s cubic-bezier(0.77, 0, 0.175, 1) 0.3s;
+}
+
+.full-menu:after{
+   z-index: -1;
+  background-color:#121212;
+    transition: height 0.9s cubic-bezier(0.77, 0, 0.175, 1) ;
+}
+
+
+
+.menu--open:before, .menu--open:after{
+  height: 100%;
+}
+
+
+.menu--open{
+  height:100%;
+  transition: height 0.9s cubic-bezier(0.77, 0, 0.175, 1) 0.3s;
+}
+
+.nav__item {
+    padding: 0 20px;
+  visibility: hidden;
+    transition: all 0.4s;
+}
+
+.menu--open .nav__item{
+  visibility: visible;
+}
+
+.menu--open .nav__list{
+  visibilty: visible;
+  opacity: 1;
+  -webkit-transition: all 0.9s cubic-bezier(0.77, 0, 0.175, 1) 0.3s;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.nav__item:hover {
+    transform: scale(1.1, 1.1);
+
+}
+.nav__item:hover .nav__link{
+  font-weight:700;
+}
+
+.nav__item-not-hover{
+  opacity:0.2;
+}
+
+
+
+
+/*****************************************-container-***************************************************/
+
+
+.container{
+
+  text-align:center;
+      margin:0 auto;
+      padding:0;
+
+
+}
+
+
+.left,
+.right,
+.main{
+
+  margin:0;
+    padding:0;
+    display:inline-block;
+    background-color: #4a4a4a;
+}
+
+
+/*不小于960时，这样设计 lager than 960*/
+@media screen and (min-width: 960px){
+
+    .container{
+        width: 100%;
+        height: 20vh;
+    }
+
+    .left,
+    .main,
+    .right{
+      margin-top: 100px;
+      display: inline-block;
+
+        height: 50vh;
+    }
+
+    .left,
+    .right{
+
+        width: 30vh;
+    }
+
+    .main{
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 100vh;
+    }
+
+    .container{
+        height: 50vh;
+        text-align:center;
+            margin:0 auto;
+            padding:0;
+    }
+
+    .nav__link{
+    font-size:26px;
+  }
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 960px){
+
+
+    .container{
+        width: 600px;
+
+    }
+
+    .left,
+    .main{
+        margin-top: 100px;
+        float: left;
+        height: 400px;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .left{
+        width: 160px;
+
+    }
+
+    .main{
+        width: 435px;
+        margin-left: 5px;
+
+    }
+
+    .container{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+
+    .container{
+        width: 400px;
+    }
+
+    .left,
+    .right{
+
+        display: none;
+
+    }
+
+    .main{
+        margin-top: 100px;
+        margin-bottom: 10px;
+        width: 400px;
+        height: 420px;
+    }
+
+
+    .container{
+        height: 420px;
+    }
+
+
+    .nav__list{
+   flex-direction:column;
+   text-align:center;
+ }
+ .nav__item{
+   padding:8px 0;
+ }
+}
