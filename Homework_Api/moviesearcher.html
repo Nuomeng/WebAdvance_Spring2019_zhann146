@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Movie Searcher</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="tv,screen,print">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <form name="search" action="/search" id="searchForm" method="POST">
+        <div class="input">
+            <label for="SearchBox">FIND YOUR MOVIE</label>
+            <input type="text" name="searchBox" id="SearchBox" required-field placeholder="| Search the movie you want here">
+            <br/> <br/> <br/>
+            <button id="submit">SUBMIT</button>
+        </div>
+    </form>
+
+    <div id = "movie_list">
+            <ul id="movie_list_container">
+            </ul>
+    </div>
+
+    <div id="not_match">
+        Sorry, We don't know this movie.
+    </div>
+
+
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
