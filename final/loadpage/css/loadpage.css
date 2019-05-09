@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+html {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  background: #fff font-size: 62.5%;
+}
+
+.depth-0 {
+  display: block;
+  text-align: center;
+}
+
+.depth-0 #logo {
+  width: 84px;
+  height: auto;
+  margin-top: 60px;
+}
+
+.depth-0 #intro {
+  width: 600px;
+  height: auto;
+  margin-top: 40px;
+}
+
+.depth-0 P {
+  margin-top: 180px;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+.button-container-3 {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  height: 36px;
+  margin-left: 43.5%;
+  margin-top: 67.5px;
+  margin-right: auto;
+  overflow: hidden;
+  border: 1px solid #F4F4F4;
+  border-radius: 1px;
+  transition: 0.5s;
+  letter-spacing: 2px;
+}
+
+.button-container-3 button {
+  width: 101%;
+  height: 100%;
+  font-weight: 300;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  background: #fff;
+  -webkit-mask: url("https://github.com/robin-dela/css-mask-animation/blob/master/img/nature-sprite-2.png?raw=true");
+  mask: url("https://github.com/robin-dela/css-mask-animation/blob/master/img/nature-sprite-2.png?raw=true");
+  -webkit-mask-size: 6100% 100%;
+  mask-size: 6100% 100%;
+  border: none;
+  color: #656565;
+  -webkit-animation: ani2 0.7s steps(70) forwards;
+  animation: ani2 0.7s steps(70) forwards;
+}
+
+.button-container-3 button:hover {
+  -webkit-animation: ani 0.7s steps(70) forwards;
+  animation: ani 0.7s steps(70) forwards;
+  border: none;
+}
+
+.mas {
+  position: absolute;
+  color: #fff;
+  background: #000;
+  text-align: center;
+  width: 101%;
+  height: 64px;
+  font-weight: 300;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  padding-top: 12px;
+  overflow: hidden;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .depth-1.flake1 img {
+    width: 64px;
+    height: auto;
+    margin-left: 250px;
+    margin-top: 40px;
+    opacity: 0.6;
+  }
+  .depth-1.flake2 img{
+    width: 44px; height: auto; 	margin-left:400px ;
+    margin-top:40px; opacity:0.2;
+  }
+  .depth-1.flake3 img {
+    width: 64px; height: auto; 	margin-left: 900px;
+   margin-top: 100px;opacity:0.25;
+  }
+  .depth-1.flake4 img{
+    width: 48px; height: auto; 	margin-left: 1000px;
+    margin-top: 100px;opacity:0.65;
+  }
+  .depth-2.flake1 img{
+    width: 74px; height: auto; margin-left:760px ;
+  margin-top:100px ;
+  }
+  .depth-3.flake2 img{
+    width: 64px; height: auto;  margin-left: 1050px;
+    margin-top: 0px;
+  }
+  .depth-4 img{
+    width: 64px; height: auto; 	margin-left: 1000px;
+    margin-top: 10px; opacity:0.55;
+  }
+  .depth-5.flake1 img{
+    width: 64px; height: auto; 	margin-left: 250px;
+    margin-top: 280px;">
+  }
+}
+@media screen and (min-width: 1500px) {
+  .depth-1.flake1 img {
+    width: 64px;
+    height: auto;
+    margin-left: 300px;
+    margin-top: 50px;
+    opacity: 0.6;
+  }
+  .depth-1.flake2 img{
+    width: 44px; height: auto; 	margin-left:500px ;
+    margin-top:40px; opacity:0.2;
+  }
+  .depth-1.flake3 img {
+    width: 64px; height: auto; 	margin-left: 1300px;
+   margin-top: 100px;opacity:0.25;
+  }
+  .depth-1.flake4 img{
+    width: 48px; height: auto; 	margin-left: 1060px;
+    margin-top: 10px;opacity:0.65;
+  }
+  .depth-2.flake1 img{
+    width: 74px; height: auto; margin-left:1000px ;
+  margin-top:80px ;
+  }
+  .depth-3.flake2 img{
+    width: 64px; height: auto;  margin-left: 1150px;
+    margin-top: 0px;
+  }
+  .depth-4 img{
+    width: 64px; height: auto; 	margin-left: 1300px;
+    margin-top: 40px; opacity:0.55;
+  }
+  .depth-5.flake1 img{
+    width: 64px; height: auto; 	margin-left: 350px;
+    margin-top: 320px;">
+  }
+}

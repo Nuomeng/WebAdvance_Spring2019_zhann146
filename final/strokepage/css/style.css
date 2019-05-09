@@ -1,0 +1,268 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+html {
+  width: 100%;
+  height: auto;
+
+}
+
+body {
+
+  margin: 0;
+  background: #fff
+  font-size: 62.5%;
+}
+/* //////////////////////////////////// - nav - /////////////////////////////////////// */
+
+/* /////// - logo - ///////// */
+
+.logo {
+  display: block;
+  text-align: center;
+}
+
+.logo img {
+  margin-top: 60px;
+  width: 84px;
+  height: auto;
+}
+
+/* /////// - gallery_icon - ///////// */
+
+#gallery_icon1 {
+  position: absolute;
+  right: 160px;
+  top: 94px;
+
+  width: 32px;
+  height: auto;
+}
+
+/* /////// - back_icon - ///////// */
+#back_icon {
+  position: absolute;
+  left: 160px;
+  top: 84px;
+
+  width: auto;
+  height: 26px;
+}
+
+#back_icon a img:active{
+  transition: all .2s cubic-bezier(0.76, -0.03, 0.46, 1.05);
+  -webkit-transition: all .2s cubic-bezier(0.76, -0.03, 0.46, 1.05);
+   transform: scale(0.1);
+   -webkit-transform: scale(0.1);
+
+}
+/* //////////////////////////////////// - container - /////////////////////////////////////// */
+.introduction{
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  margin-top: 40px;
+  left: 20%;
+
+}
+#radical_logo img{
+  width: 160px;
+  height: auto;
+}
+
+#radical_name{
+  margin-top: 0px;
+  font-size: 1.1em;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+#radical_style img{
+margin-top: 24px;
+  width: 20%;
+  height: auto;
+}
+.introduction p{
+  font-size: 1em;
+  line-height: 24px;
+  width: 310px;
+  margin-top: 24px;
+}
+
+
+/* //////////////////////////////////// - canvas - /////////////////////////////////////// */
+
+.container{
+z-index: 999999;
+margin-left:832.5px;
+position: fixed;
+top: 565px;
+}
+/* //////////////////////// - pupup - /////////////////////////////// */
+
+
+h2 {
+font-size: 1em;
+  color: #333;
+}
+
+.popup {
+position: fixed;
+width: 960px;
+height: 450px;
+transform: translate(-50%, -50%) scale(0.5);
+position: absolute;
+top: -185px;
+left: -180px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+border-radius: 1px;
+background: #fff;
+text-align: center;
+z-index: 3;
+
+}
+.popup .intro{
+margin-top: 50px;
+margin-right: 14px;
+  display:inline-block;
+text-align: center;
+  width: 300px;
+
+}
+
+.popup .closeBtn img {
+display: inline-block;
+position: absolute;
+bottom: 20px;
+right: 20px;
+font-weight: bold;
+text-decoration: none;
+color: #AB3B3A;
+line-height: 10px;
+}
+
+.animationOpen, .animationClose {
+  display: block;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+}
+
+.animationOpen {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.animationClose {
+	opacity: 0;
+  -webkit-transform: translate(-50%, -50%) scale(.5);
+  transform: translate(-50%, -50%) scale(.5);
+}
+
+
+/* //////////////////////// - button - /////////////////////////////// */
+
+
+.button-container-3  {
+  position: relative;
+  display: inline-block;
+  width: 72px;
+  height: 28px;
+
+  margin-left: 10px;
+  margin-right: auto;
+
+  overflow: hidden;
+
+border:solid #656565;
+border-width: 0px 0px 1px 0px;
+border-radius: 1px;
+
+  transition: 0.5s;
+  letter-spacing: 1px;
+}
+
+
+.button-container-3 button {
+  width: 101%;
+  height: 100%;
+
+  font-weight: 300;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  background: #fff;
+
+  -webkit-mask: url("https://github.com/robin-dela/css-mask-animation/blob/master/img/nature-sprite-2.png?raw=true");
+  mask: url("https://github.com/robin-dela/css-mask-animation/blob/master/img/nature-sprite-2.png?raw=true");
+  -webkit-mask-size: 7100% 100%;
+  mask-size: 7100% 100%;
+  border: none;
+  color: #000;
+  -webkit-animation: ani2 0.7s steps(70) forwards;
+  animation: ani2 0.7s steps(70) forwards;
+}
+.button-container-3 button:hover {
+  -webkit-animation: ani 0.7s steps(70) forwards;
+  animation: ani 0.7s steps(70) forwards;
+    border: none;
+}
+
+.mas {
+  position: absolute;
+  color: #fff;
+  background: #000;
+  text-align: center;
+  width: 101%;
+  height: 64px;
+
+  font-weight: 300;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  padding-top: 8px;
+  overflow: hidden;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}

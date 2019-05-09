@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>intro</title>
+  <link rel="stylesheet" href="css/loadpage.css">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <ul id="scene">
+
+    <li class="layer" data-depth="0.00">
+
+      <span class="depth-0">
+<div>
+        <a href="../index.html">
+          <img id="logo" src="img/logo@2x.png" style="  ">
+        </a>
+      </div>
+      <div>
+        <img id="intro" src="img/intro.gif" style="  ">
+      </div>
+      </span>
+    </li>
+
+    <div class="layer" data-depth="0.20" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="20" data-scalar-y="20">
+      <div class="depth-1 flake1">
+        <img src="img/4@2x.png" style="  ">
+
+      </div>
+      <div class="depth-1 flake2">
+        <img src="img/12@2x.svg" >
+      </div>
+
+      <div class="depth-1 flake3">
+        <img src="img/2@2x.png" >
+      </div>
+      <div class="depth-1 flake4">
+        <img src="img/10@2x.png" >
+      </div>
+
+    </div>
+
+
+
+    <li class="layer" data-depth="0.40" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="40" data-scalar-y="40">
+      <div class="depth-2 flake1">
+        <img src="img/1@2x.png" >
+      </div>
+      <div class="depth-2 flake2">
+        <img src="img/9@2x.png" style="  width: 64px; height: auto;  margin-left:150px ;
+        margin-top:160px ; opacity:0.3;">
+      </div>
+
+      <div class="depth-2 flake5">
+        <img src="img/13@2x.png" style="  width: 72px; height: auto; 	margin-left: 600px;
+        margin-top: 20px;">
+      </div>
+    </li>
+
+
+    <li class="layer" data-depth="0.60" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="60" data-scalar-y="60">
+      <div class="depth-3 flake1">
+        <img src="img/8@2x.png" style="  width: 64px; height: auto; 	margin-left: 50px;
+        margin-top: 190px; opacity:0.7;">
+
+      </div>
+      <div class="depth-3 flake2">
+        <img src="img/6@2x.png" >
+      </div>
+
+      <div class="depth-3 flake4">
+        <img src="img/3@2x.png" style="  width: 84px; height: auto; 	margin-left: 350px;
+        margin-top:200px;opacity:0.9;">
+
+      </div>
+
+
+    </li>
+    <li class="layer" data-depth="0.80" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="80" data-scalar-y="80">
+      <div class="depth-4">
+        <img src="img/11@2x.png" >
+      </div>
+    </li>
+    <li class="layer" data-depth="1.00" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="100" data-scalar-y="100">
+      <div class="depth-5">
+        <img src="img/5@2x.png" style="  width: 64px; height: auto; 	margin-left: 250px;
+        margin-top: 280px;">
+      </div>
+
+      <div class="depth-5">
+        <img src="img/14@2x.png" style="  width: 64px; height: auto; 	margin-left: 750px;
+        margin-top: 130px; opacity:0.4;">
+      </div>
+    </li>
+
+
+  </ul>
+  <div class="button-container-3" id="refresh" style="margin-top: 0px;">
+    <span class="mas">ENTER</span>
+    <a href="../index.html">
+      <button  type="submit"  onClick="refreshPage()">ENTER</button>
+    </div>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
+  <script>
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+  </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet" transform="translate(-577.000000, -287.000000)">
+            <g id="Group-3" transform="translate(578.000000, 288.000000)">
+                <g id="Group-2" transform="translate(12.841463, 13.329268) rotate(5.000000) translate(-12.841463, -13.329268) translate(0.341463, 0.829268)">
+                    <rect id="Rectangle-5" fill="#262223" x="0" y="0" width="25" height="25"></rect>
+                    <path d="M12.6585366,3.2195122 L12.6585366,22.097561" id="Line-2" stroke="#F8F8FA" stroke-width="0.5" stroke-linecap="square" stroke-dasharray="3"></path>
+                    <path d="M2.2195122,12.6585366 L21.9756098,12.6585366" id="Line" stroke="#F8F8FA" stroke-width="0.5" stroke-linecap="square" stroke-dasharray="3"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

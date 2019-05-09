@@ -1,0 +1,78 @@
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="css/style0.css" media="tv,screen,print">
+
+    </head>
+<body>
+
+  <!--///////////////////////////////////////nav/////////////////////////////////////////////////////-->
+  <div class="nav">
+
+    <!--//////////logo//////////-->
+    <div id="logo" style=" margin-top:24px;">
+      <a href="../strokepage/water.html" >
+          <img src="../img/water_logo.png" alt="logo">
+        </a>
+    </div>
+
+    <!--//////////back_to_home_page//////////-->
+    <div class="back_icon">
+      <a href="../strokepage/water.html">
+        <div style="">
+        <img id="back_icon"src="../img/back@2x.png">
+        <div>
+        </a>
+    </div>
+
+  </div>
+
+  <!--///////////////////////////////////////gallery/////////////////////////////////////////////////////-->
+<div class="gallery">
+  <ul id="photo-gallery" >
+    <li>
+        <img src="img/1.png">
+    </li>
+
+    <li>
+        <img src="img/2.png">
+    </li>
+
+    <li>
+        <img src="img/3.png">
+    </li>
+
+    <li>
+        <img src="img/4.png">
+    </li>
+
+  </ul>
+</div>
+  <script>
+  var $overlay = $('<div id="overlay"></div>');
+  var $image = $("<img>");
+
+  //An image to overlay
+  $overlay.append($image);
+
+  //Add overlay
+  $("body").append($overlay);
+
+    //click the image and a scaled version of the full size image will appear
+    $("#photo-gallery a").click( function(event) {
+      event.preventDefault();
+      var imageLocation = $(this).attr("href");
+
+      //update overlay with the image linked in the link
+      $image.attr("src", imageLocation);
+
+      //show the overlay
+      $overlay.show();
+    } );
+
+    $("#overlay").click(function() {
+      $( "#overlay" ).hide();
+    });
+  </script>
+</body>
+
+</html>
